@@ -1,0 +1,11 @@
+.main__content__pokemons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.pokemon{
+    padding: 1.2rem;
+    border: 0.1rem solid red;
+}

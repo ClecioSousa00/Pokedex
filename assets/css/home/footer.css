@@ -1,0 +1,19 @@
+.footer__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__list__items{
+    display: inline-block;
+    padding: 1.2rem;
+}
+
+.footer__list__items a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
