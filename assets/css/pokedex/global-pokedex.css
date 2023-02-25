@@ -7,3 +7,10 @@
     --container-pokedex-color: #F38943;
 }
 
+body{
+    background: var(--container-pokedex-color);
+}
+.container-pokedex{
+    
+    height: 100%;
+}

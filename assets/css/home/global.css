@@ -32,10 +32,6 @@ body{
     background: var(--body-background);
 }
 
-.container-pokedex{
-    background: var(--container-pokedex-color);
-    height: 100%;
-}
 
 
 
