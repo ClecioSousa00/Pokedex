@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+@import url('main-pokedex.css');
+
+:root{
+    --pokedex-color-1: #FFCE4B;
+    --container-pokedex-color: #F38943;
+}
+
