@@ -13,7 +13,7 @@
 :root{
     --body-background: linear-gradient(180deg, rgba(253, 172, 26, 0.95) 54.03%, rgb(250, 164, 6) 100%);
     --btn-background: #FE9227;
-    --container-pokedex-color: #CDD0E6;
+    
 }
 
 html{
