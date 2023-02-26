@@ -1,7 +1,7 @@
 
-const offset = 0
-const limit = 20
-const urlApiPokemon = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+// const offset = 0
+// const limit = 10
+// const urlApiPokemon = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
 
 
@@ -32,14 +32,18 @@ const pokemonList = document.querySelector('#pokemonList')
 
 
 
-fetch(urlApiPokemon)
-    .then(response => response.json())
-    .then(jsonBody => jsonBody.results)
-    .then(pokemons => {
-        
-        Array.from(pokemons).forEach(pokemon =>{
-            
-            pokemonList.innerHTML += convertPokemonToHtml(pokemon)
-        })
-    })
-    .catch(error => console.error(error))
+pokeApi.getpokemons().then((pokemons = []) => { 
+   
+   const newlist = pokemons.map(pokemon => convertPokemonToHtml(pokemon))
+   
+   const newHtml = newlist.join('')
+   pokemonList.innerHTML = newHtml
+   
+    // const listItems = []
+
+    // Array.from(pokemons).forEach(pokemon =>{
+    //       listItems.push(convertPokemonToHtml(pokemon))  
+    //     // pokemonList.innerHTML += convertPokemonToHtml(pokemon)
+    // })
+    // console.log(listItems);
+})
