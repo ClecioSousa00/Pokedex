@@ -1,10 +1,15 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 
 @import url('main-pokedex.css');
+@import url('header-pokedex.css');
 
 :root{
     --pokedex-color-1: #FFCE4B;
-    --container-pokedex-color: #F38943;
+    --container-pokedex-color: #F9D169;
+    --box-pokemon-plant: #49D0B0;
+    --box-pokemon-plant-type: #02B289;
 }
 
 body{

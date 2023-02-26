@@ -1,0 +1,14 @@
+
+.header__pokedex{
+    margin: 5rem 0rem 4rem 0rem;
+}
+.header__pokedex__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex__nav__logo img{
+    max-width: 20rem;
+    width: 100%;
+}
