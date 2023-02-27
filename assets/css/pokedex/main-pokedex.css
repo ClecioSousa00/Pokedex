@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    background-color: var(--box-pokemon-plant);
+    background-color: var(--box-pokemon);
     max-width: 27rem;
     width: 100%;
     margin: auto;
@@ -32,6 +32,7 @@
     color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
+    text-transform: capitalize;
 }
 .pokemon__name span{
     color: #fff;
@@ -53,7 +54,7 @@
     color: #fff;
     font-size: 1.2rem;
     font-weight: 300;
-    background-color: var(--box-pokemon-plant-type);
+    background-color: var(--box-pokemon-type);
     border-radius: 0.5rem;
     padding: 0.6rem;
     text-align: center;
@@ -68,5 +69,14 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    
+}
+
+.grass{
+    background-color: #49D0B0;
+}
+.fire{
+    background-color: #FC6C6D;
+}
+.water{
+    background-color: #6890F0;
 }

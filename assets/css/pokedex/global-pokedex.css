@@ -8,8 +8,9 @@
 :root{
     --pokedex-color-1: #FFCE4B;
     --container-pokedex-color: #F9D169;
-    --box-pokemon-plant: #49D0B0;
-    --box-pokemon-plant-type: #02B289;
+    --box-pokemon-type: #d9e9e53a;
+    --box-pokemon: #1f8f75;
+    
 }
 
 body{
