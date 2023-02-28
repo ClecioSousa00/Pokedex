@@ -1,7 +1,6 @@
 
 
 
-
 .main__content__pokemons{
     display: grid;
     grid-template-columns: 1fr;
@@ -71,12 +70,25 @@
     bottom: 0;
 }
 
+.main__button{
+    max-width: 30rem;
+    width: 100%;
+}
+
+
+
+
+
+
 .grass{
-    background-color: #49D0B0;
+    background-color: var(--box-pokemon-grass);
 }
 .fire{
-    background-color: #FC6C6D;
+    background-color: var(--box-pokemon-fire);
 }
 .water{
-    background-color: #6890F0;
+    background-color: var(--box-pokemon-water);
+}
+.bug{
+    background-color: var(--box-pokemon-bug);
 }

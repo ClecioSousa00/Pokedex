@@ -7,6 +7,11 @@
 //     return pokemonTypes.map(pokemonType => `<span>${pokemonType.type.name}</span>`)
 // }
 
+const pokemonList = document.querySelector('#pokemonList')
+const btnMorePokemon = document.querySelector('#js-btn-more')
+const limit = 6
+let offset = 0
+
 function convertPokemonToHtml(pokemon){
     return `
         <div class="pokemon ${pokemon.type}">
@@ -29,22 +34,20 @@ function convertPokemonToHtml(pokemon){
 }
 
 
-const pokemonList = document.querySelector('#pokemonList')
 
-
-
-pokeApi.getpokemons().then((pokemons = []) => { 
+function loadMorePokemons(offset, limit){
+    pokeApi.getpokemons(offset, limit).then((pokemons = []) => { 
    
-   const newlist = pokemons.map(pokemon => convertPokemonToHtml(pokemon))
-   
-   const newHtml = newlist.join('')
-   pokemonList.innerHTML = newHtml
-   
-    // const listItems = []
+        const newlist = pokemons.map(pokemon => convertPokemonToHtml(pokemon))
+        
+        const newHtml = newlist.join('')
+        pokemonList.innerHTML += newHtml
+        
+     })
+}
 
-    // Array.from(pokemons).forEach(pokemon =>{
-    //       listItems.push(convertPokemonToHtml(pokemon))  
-    //     // pokemonList.innerHTML += convertPokemonToHtml(pokemon)
-    // })
-    // console.log(listItems);
+loadMorePokemons(offset,limit)
+btnMorePokemon.addEventListener('click', ()=>{
+    offset += limit
+    loadMorePokemons(offset, limit)
 })
