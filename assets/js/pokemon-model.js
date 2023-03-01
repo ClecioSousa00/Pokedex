@@ -6,4 +6,5 @@ class Pokemon {
     typeof;
     types = [];
     photo;
+    stats = [];
 }

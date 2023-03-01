@@ -9,7 +9,7 @@
 
 const pokemonList = document.querySelector('#pokemonList')
 const btnMorePokemon = document.querySelector('#js-btn-more')
-const limit = 6
+const limit = 9
 let offset = 0
 
 function convertPokemonToHtml(pokemon){
