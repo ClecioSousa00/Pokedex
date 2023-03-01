@@ -9,11 +9,27 @@
     --pokedex-color-1: #FFCE4B;
     --container-pokedex-color: #F9D169;
     --box-pokemon-type: #d9e9e53a;
-    --box-pokemon: #1f8f75;
+    /* --box-pokemon: #1f8f75; */
+
     --box-pokemon-grass: #49D0B0;
     --box-pokemon-fire: #FC6C6D;
     --box-pokemon-water: #6890F0;
     --box-pokemon-bug: #A8B820;
+    --box-pokemon-electric: #FFCE4B;
+    --box-pokemon-ice: #98D8D8;
+    --box-pokemon-normal: #A8A878;
+    --box-pokemon-fighting: #C03028;
+    --box-pokemon-flying: #A890F0;
+    --box-pokemon-poison: #A040A0;
+    --box-pokemon-psychic: #F85888;
+    --box-pokemon-dark: #705848;
+    --box-pokemon-rock: #B8A038;
+    --box-pokemon-ghost: #705898;
+    --box-pokemon-steel: #B8B8D0;
+    --box-pokemon-dragon: #7038F8;
+    --box-pokemon-fairy: #FFAEC9; 
+    --box-pokemon-ground: #E0C068;
+    
     
 }
 

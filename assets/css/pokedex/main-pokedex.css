@@ -17,7 +17,7 @@
     max-width: 27rem;
     width: 100%;
     margin: auto;
-    height: 11.4rem;
+    height: 12.4rem;
     border-radius: 1.2rem;
     padding: 1rem;
 }
@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80%;
 }
 .pokemon__type{
     display: flex;
@@ -51,17 +52,20 @@
 }
 .pokemon__type span{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
     font-weight: 300;
     background-color: var(--box-pokemon-type);
     border-radius: 0.5rem;
     padding: 0.6rem;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .pokemon__image{
-    width: 8rem;
+    height: 100%;
     z-index: 1;
+    max-width: 14rem;
 }
 
 .pokemon__pokebola{
@@ -92,3 +96,47 @@
 .bug{
     background-color: var(--box-pokemon-bug);
 }
+.electric{
+    background-color: var(--box-pokemon-electric);
+}
+.ice{
+    background-color: var(--box-pokemon-ice);
+}
+.normal{
+    background-color: var(--box-pokemon-normal);
+}
+.fighting{
+    background-color: var(--box-pokemon-fighting);
+}
+.flying{
+    background-color: var(--box-pokemon-flying);
+}
+.poison{
+    background-color: var(--box-pokemon-poison);
+}
+.psychic{
+    background-color: var(--box-pokemon-psychic);
+}
+.dark{
+    background-color: var(--box-pokemon-dark);
+}
+.rock{
+    background-color: var(--box-pokemon-rock);
+}
+.ghost{
+    background-color: var(--box-pokemon-ghost);
+}
+.steel{
+    background-color: var(--box-pokemon-steel);
+}
+.dragom{
+    background-color: var(--box-pokemon-dragon);
+}
+.fairy{
+    background-color: var(--box-pokemon-fairy);
+}
+.ground{
+    background-color: var(--box-pokemon-ground);
+}
+
+   
