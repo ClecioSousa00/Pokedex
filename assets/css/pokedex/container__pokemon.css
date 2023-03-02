@@ -5,7 +5,12 @@
     width: 100vw;
     background-color: rgb(121, 117, 117);
     position: fixed;
-    
+    display: none;
+}
+
+.container__pokemon h3{
+    font-size: 2.4rem;
+    font-weight: 700;   
 }
 
 .pokemon__select__header{
@@ -38,8 +43,60 @@
    width: 25rem;
 }
 
-.container__pokemon__status{
+
+
+
+.container__pokemon__infos{
     background-color: #fff;
     height: 100%;
     border-radius: 3rem 3rem 0rem 0rem;
+    padding: 3rem 3.5rem 0rem;
+}
+
+
+.pokemon__infos__box span, .pokemon__stats span{
+    font-size: 2rem;
+    font-weight: 400;   
+}
+
+
+.pokemon__infos__name, .pokemon__infos__box, .pokemon__stats__box__infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon__infos__name{
+    margin-bottom: 2.5rem;
+}
+.pokemon__infos__name h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.pokemon__infos__name span{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.pokemon__infos__box{
+    margin-bottom: 2.5rem;
+}
+.pokemon__infos{
+    text-align: center;
+}
+.pokemon__infos h3{
+    margin-bottom: 0.5rem;
+}
+
+.pokemon__infos span{
+    display: block;
+}
+
+
+.pokemon__stats{
+    text-align: center;
+}
+
+.pokemon__stats__box__infos{
+    margin-bottom: 1rem;
 }

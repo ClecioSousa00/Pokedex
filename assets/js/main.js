@@ -34,6 +34,21 @@ function convertPokemonToHtml(pokemon){
 }
 
 
+const t = document.querySelector('.main__content__pokemons')
+const showPokemonScreen = document.querySelector('.container__pokemon')
+const btnPrevious = document.querySelector('#js-btn-previous')
+
+
+t.addEventListener('click', event =>{
+    const clickedElement = event.target
+    if(clickedElement.nodeName === 'IMG'){
+        showPokemonScreen.style.display = 'block'
+    }
+})
+
+btnPrevious.addEventListener('click',()=>{
+    showPokemonScreen.style.display = 'none'
+})
 
 function loadMorePokemons(offset, limit){
     pokeApi.getpokemons(offset, limit).then((pokemons = []) => { 
