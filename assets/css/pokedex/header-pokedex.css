@@ -1,6 +1,6 @@
 
 .header__pokedex{
-    margin: 5rem 0rem 4rem 0rem;
+    padding: 5rem 0rem 4rem 0rem;
 }
 .header__pokedex__nav{
     display: flex;

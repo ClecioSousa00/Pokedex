@@ -38,9 +38,10 @@
 
 .pokemon__select__images  img:first-child{
    z-index: 1;
+   height: 18rem;
  }
 .pokemon__select__images img:last-child{
-   width: 25rem;
+   width: 18rem;
 }
 
 
