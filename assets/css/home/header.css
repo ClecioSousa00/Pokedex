@@ -12,10 +12,7 @@
 }
 
 .nav__btn-pokedex{
-    
-    background-color: transparent;
-    
-    
+    background-color: transparent; 
     border: none;
     cursor: pointer;
 }

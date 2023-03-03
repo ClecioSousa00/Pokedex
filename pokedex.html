@@ -16,36 +16,17 @@
         <header class="header__pokedex">
             <nav class="header__pokedex__nav">
                 <a  class="pokedex__nav__logo" href="index.html"><img src="assets/imagens/img-mobile/logo-pokemon.svg" alt="logo Pokemon"></a>
-                <!-- <button class="nav__btn-pokedex">
-                    <a href="pokedex.html">
-                        <img class="btn-pokedex__image" src="assets/imagens/img-mobile/pokebola.svg" alt="pokebola">
-                        <span class="btn-pokedex__text">Pokédex</span>
-                    </a>
-                </button> -->
             </nav>
+            <div class="header__pokedex__search-box">
+                <input type="text" class="search-box__text" placeholder="Search Pokémon">
+                <a class="search-box-btn" href="#"><span class="material-symbols-outlined">search</span></a>
+            </div>
         </header>
         
         <main>
-            <!-- <h1>Pokédex</h1> -->
             <section class="main__content">
                 <div  id="pokemonList" class="main__content__pokemons"> 
-                    <!-- <div class="pokemon">
-                        <div class="pokemon__name">
-                            <p>Bulbasaur</p>
-                            <span>#001</span>
-                        </div>
-                        
-                        <div class="pokemon__details">
-                            <div class="pokemon__type">
-                                <span>Grass</span>
-                                <span>Poison</span>
-                            </div>
-                            <img class="pokemon__image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbassaiuro">
-                        </div>
-                        <div class="pokemon__pokebola">
-                            <img src="assets/imagens/img-mobile/pokebola-tranparent.svg" alt="pokebola transparente">
-                        </div>
-                    </div> -->
+                
                 </div>
                 <div class="main__buttons">
                     <button id="js-btn-more" class="main__button">More Pokémons</button>  
@@ -54,75 +35,12 @@
         </main>
 
         <div class="container__pokemon">
-            <!-- <div class="container__pokemon__select">
-                <div class="pokemon__select__header">
-                    <button id="js-btn-previous"><span class="material-symbols-outlined">navigate_before</span> Pokédex</button>
-                    <a  class="nav__logo" href="index.html"><img src="assets/imagens/img-mobile/logo-pokemon.svg" alt="logo Pokemon"></a>
-                </div>
-                <div class="pokemon__select__images">
-                    <img src="assets/imagens/img-mobile/Group.png" alt="bulba">
-                    <img class="pokemon__pokebola" src="assets/imagens/img-mobile/pokebola-tranparent.svg" alt="pokebola-tranparent">
-                </div>
-            </div>
-
-            <div id="js-pokemon-select" class="container__pokemon__infos">
-                <div class="pokemon__infos__name">
-                    <h2>Bulbasaur</h2>
-                    <span>#001</span>
-                </div>
-
-                <div class="pokemon__infos__box">
-                    <div class="pokemon__infos">
-                        <h3>Type</h3>
-                        <span>Grass</span>
-                        <span>Poison</span> 
-                    </div>
-                    
-                    <div class="pokemon__infos">
-                        <h3>Skill</h3>
-                        <span>Overgrow</span>
-                        <span>Overgow2</span>
-                    </div>
-                </div>
-
-                <div class="pokemon__stats">
-                    <h3>Stats</h3>
-                    <div class="pokemon__stats__box">
-                        <div class="pokemon__stats__box__infos">
-                            <span>Hp</span>
-                            <span>49</span>
-                        </div>
-                        <div class="pokemon__stats__box__infos">
-                            <span>Attack</span>
-                            <span>50</span>
-                        </div>
-                        <div class="pokemon__stats__box__infos">
-                            <span>Defense</span>
-                            <span>51</span>
-                        </div>
-                        <div class="pokemon__stats__box__infos">
-                            <span>Special-attack</span>
-                            <span>52</span>
-                        </div>
-                        <div class="pokemon__stats__box__infos">
-                            <span>Special-defense</span>
-                            <span>53</span>
-                        </div>
-                        <div class="pokemon__stats__box__infos">
-                            <span>Speed</span>
-                            <span>54</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
         </div>
-        
-        
     </div>
 
 
     <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/pokemon-screen.js"></script>
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
