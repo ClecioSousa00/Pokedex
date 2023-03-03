@@ -3,3 +3,13 @@
     align-items: center;
     flex-direction: column;
 }
+
+.main__container img{
+    animation: pikachu-img 1.5s infinite
+}
+
+@keyframes pikachu-img{
+    50% {
+        transform: translateY(-10%);
+    }
+}
