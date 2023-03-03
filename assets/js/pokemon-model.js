@@ -8,4 +8,5 @@ class Pokemon {
     photo;
     stats = [];
     skills = [];
+    nameStats = [];
 }
