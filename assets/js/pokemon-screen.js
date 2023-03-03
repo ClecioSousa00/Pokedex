@@ -4,10 +4,11 @@ const btnPrevious = document.querySelector('#js-btn-previous')
 const containerPokes = document.querySelector('.main__content__pokemons')
 
 containerPokes.addEventListener('click', event =>{
-    if(event.target.nodeName === 'P'){
-        showPokemonScreen.style.display = 'block'
-        const namePoke = event.target.innerHTML
+   console.log(event);
+    if(event.target.nodeName === 'IMG'){
+        const namePoke = event.target.alt
         pokeClik(namePoke)
+        
    }
   
 })
@@ -64,6 +65,7 @@ function newScreenPoke(pokemon){
             </div>
         </div>
     `
+    showPokemonScreen.style.display = 'block'
 }
 
 function pokeClik(namePokeClicked){
