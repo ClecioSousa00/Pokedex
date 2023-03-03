@@ -33,15 +33,18 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    height: 23rem;
 }
 
 .pokemon__select__images  img:first-child{
    z-index: 1;
-   height: 18rem;
+   height: 20rem;
+   position: absolute;
+    bottom: -1.8rem;
+    max-width: 80%;
  }
 .pokemon__select__images img:last-child{
-   width: 18rem;
+    width: 22rem;
 }
 
 
@@ -51,7 +54,7 @@
     background-color: #fff;
     height: 100%;
     border-radius: 3rem 3rem 0rem 0rem;
-    padding: 3rem 3.5rem 0rem;
+    padding: 1rem 3.5rem 0rem;
 }
 
 
