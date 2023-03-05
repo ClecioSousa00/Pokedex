@@ -38,6 +38,7 @@
 body{
     background: var(--container-pokedex-color);
     height: 100vh;
+    scroll-behavior: smooth;
 }
 .container-pokedex{
 /*     

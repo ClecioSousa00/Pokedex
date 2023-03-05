@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/home/global.css">
     <link rel="stylesheet" href="assets/css/pokedex/global-pokedex.css">
-   
+    <link rel="shortcut icon" href="assets/imagens/img-mobile/favicon.ico" type="image/x-icon">
 
     <!-- link google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Pokédex</title>
 </head>
 <body>
-    <div class="container-pokedex">
-        <header class="header__pokedex">
+    <div  class="container-pokedex">
+        <header id="top" class="header__pokedex">
             <nav class="header__pokedex__nav">
                 <a  class="pokedex__nav__logo" href="index.html"><img src="assets/imagens/img-mobile/logo-pokemon.svg" alt="logo Pokemon"></a>
             </nav>
@@ -32,15 +32,20 @@
                 <div class="main__buttons">
                     <button id="js-btn-more" class="main__button">More Pokémons</button>  
                 </div>
-                <!-- <button class="btn-top"><a href="header__pokedex"></a> <span class="material-symbols-outlined">arrow_upward</span></button> -->
+                
             </section>
         </main>
-
+        
         <div class="container__pokemon">
         </div>
     </div>
 
-
+    <button class="js-btn-top">
+        <a href="#top">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </a>
+    </button>
+    <script src="assets/js/scroll-top.js"></script>
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/pokemon-screen.js"></script>
     <script src="assets/js/poke-api.js"></script>

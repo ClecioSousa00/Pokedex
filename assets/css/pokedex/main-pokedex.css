@@ -115,9 +115,20 @@
     color: black; */
  }
  
-.btn-top{
-    position: absolute;
-    bottom: 0;
+.js-btn-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff;
+}
+.js-btn-top a{
+    text-decoration: none;
+    color: black;
 }
 
 
