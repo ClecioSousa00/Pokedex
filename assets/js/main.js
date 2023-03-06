@@ -5,6 +5,7 @@ const pokemonList = document.querySelector('#pokemonList')
 const btnMorePokemon = document.querySelector('#js-btn-more')
 const limit = 9
 let offset = 0
+const maxPokemons = 151
 
 function convertPokemonToHtml(pokemon){
     return `
@@ -31,7 +32,6 @@ function convertPokemonToHtml(pokemon){
 
 function loadMorePokemons(offset, limit){
     pokeApi.getpokemons(offset, limit).then((pokemons = []) => { 
-        
         const newlist = pokemons.map(pokemon => convertPokemonToHtml(pokemon))
         const newHtml = newlist.join('')
         pokemonList.innerHTML += newHtml
@@ -40,9 +40,19 @@ function loadMorePokemons(offset, limit){
 }
 
 loadMorePokemons(offset,limit)
+
 btnMorePokemon.addEventListener('click', ()=>{
     offset += limit
-    loadMorePokemons(offset, limit)
+    const qntPokemonsWithPage = offset + limit
+    if(qntPokemonsWithPage >= maxPokemons){
+        const newLimit = maxPokemons - offset
+        loadMorePokemons(offset, newLimit)
+        btnMorePokemon.parentElement.removeChild(btnMorePokemon)
+    }else{
+        loadMorePokemons(offset, limit)
+    }
+    
+    
 })
 
 
