@@ -2,9 +2,9 @@
 const showPokemonScreen = document.querySelector('.container__pokemon')
 const btnPrevious = document.querySelector('#js-btn-previous')
 const containerPokes = document.querySelector('.main__content__pokemons')
-
+const msgError = document.querySelector('#js-msg-error')
 containerPokes.addEventListener('click', event =>{
-   console.log(event);
+   
     if(event.target.nodeName === 'IMG'){
         const namePoke = event.target.alt
         pokeClik(namePoke)
@@ -73,7 +73,14 @@ function pokeClik(namePokeClicked){
         // const pokeClicked = pokemons.filter(pokemon => pokemon.name === namePokeClicked)
         // newScreenPoke(pokeClicked)
         const teste = pokemons.findIndex(po => po.name === namePokeClicked)
-        newScreenPoke(pokemons[teste])
+        if(teste === -1){
+            msgError.innerHTML = `${namePokeClicked} não existe, digite novamente o nome do Pokémon`
+            
+        }else{
+            newScreenPoke(pokemons[teste])
+            msgError.innerHTML = ''
+        }
+        
      })
 }
 

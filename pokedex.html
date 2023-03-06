@@ -19,9 +19,12 @@
                 <a  class="pokedex__nav__logo" href="index.html"><img src="assets/imagens/img-mobile/logo-pokemon.svg" alt="logo Pokemon"></a>
             </nav>
             <div class="header__pokedex__search-box">
-                <input type="text" class="search-box__text" placeholder="Search Pokémon">
-                <a class="search-box-btn" href="#"><span class="material-symbols-outlined">search</span></a>
+                <form class="pokedex__form">
+                    <input id="js-input-search" type="text" class="search-box__text" name="pokemon" placeholder="Search Pokémon" autocomplete="off">
+                    <button type="submit" class="search-box-btn"><span class="material-symbols-outlined">search</span></button>
+                </form>
             </div>
+            <span id="js-msg-error"></span>
         </header>
         
         <main>
@@ -45,6 +48,8 @@
             <span class="material-symbols-outlined">arrow_upward</span>
         </a>
     </button>
+
+    <script src="assets/js/pokemon-search.js"></script>
     <script src="assets/js/scroll-top.js"></script>
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/pokemon-screen.js"></script>

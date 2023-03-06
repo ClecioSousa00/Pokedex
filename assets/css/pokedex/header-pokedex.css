@@ -6,6 +6,10 @@
     align-items: center;
     gap: 3rem
 }
+.header__pokedex > span{
+    color: #fff;
+    font-size: 1.2rem;
+}
 .header__pokedex__nav{
     display: flex;
     align-items: center;
@@ -18,13 +22,15 @@
 }
 
 .header__pokedex__search-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 27rem;
     border-radius: 5rem;
     border: 0.1rem solid #fff;
     padding: 0.8rem;
+}
+.pokedex__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .search-box__text{
@@ -42,6 +48,8 @@
 }
 
 .search-box-btn{
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
     color: #fff;
 }
