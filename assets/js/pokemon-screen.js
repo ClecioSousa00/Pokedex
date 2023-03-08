@@ -70,8 +70,6 @@ function newScreenPoke(pokemon){
 
 function pokeClik(namePokeClicked){
     pokeApi.getpokemons(0, 151).then((pokemons = []) => { 
-        // const pokeClicked = pokemons.filter(pokemon => pokemon.name === namePokeClicked)
-        // newScreenPoke(pokeClicked)
         const teste = pokemons.findIndex(po => po.name === namePokeClicked)
         if(teste === -1){
             msgError.innerHTML = `${namePokeClicked} não existe, digite novamente o nome do Pokémon`
@@ -86,6 +84,6 @@ function pokeClik(namePokeClicked){
 
 
 function backPokedex(){
-    // showPokemonScreen.innerHTML = ''
+    
     showPokemonScreen.style.display = 'none' 
 }
